@@ -1,5 +1,6 @@
 var player1count = 1
-var player2count = 1 
+var player2count = 1
+
 
 
 function winning() {
@@ -41,10 +42,10 @@ function advance_player_position(player){
 }
 
 function movePlayers(e) {
-  if (String.fromCharCode(e.keyCode) === 'A') { 
+  if (String.fromCharCode(e.keyCode) === 'A') {
     advance_player_position('player1')
   }
-  if (String.fromCharCode(e.keyCode) === 'M') { 
+  if (String.fromCharCode(e.keyCode) === 'M') {
     advance_player_position('player2')
   }
   winner()
